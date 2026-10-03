@@ -2,15 +2,6 @@
 
 Ứng dụng thời tiết sử dụng API của [OpenWeatherMap](https://openweathermap.org/api), được chuyển từ bài Lab 9 Flutter sang **React Native (Expo)** cho môn Lập trình đa nền tảng. Hiển thị thời tiết theo vị trí GPS hoặc theo tên thành phố người dùng nhập.
 
-🎥 **Video demo:** [Dán link video demo vào đây](https://example.com)
-
-## 📸 Ảnh chụp màn hình
-
-| Thời tiết hiện tại | Tìm thành phố |
-|---|---|
-| ![Weather](screenshots/weather.png) | ![City](screenshots/city.png) |
-
-> Chụp màn hình app rồi lưu vào thư mục `screenshots/`.
 
 ## ✨ Chức năng
 
@@ -81,25 +72,3 @@ npx expo start -c
 ```
 
 Sau đó quét mã QR bằng Expo Go, hoặc nhấn `a` (Android), `i` (iOS), `w` (web).
-
-## 🔄 So sánh Flutter và React Native
-
-| Flutter | React Native |
-|---|---|
-| `http` package | `fetch` có sẵn |
-| `geolocator` | `expo-location` |
-| `jsonDecode` | `response.json()` |
-| `location.dart`, `networking.dart`, `weather_model.dart` | `services/location.js`, `networking.js`, `weather.js` |
-| `initState()` + `async/await` | `useEffect` + `async/await` |
-| `Navigator.push/pop` + giá trị trả về | `navigation.navigate/goBack` + `Context` để chia sẻ dữ liệu |
-| `TextField` | `TextInput` |
-| `IconButton` | `Pressable` + `Ionicons` |
-| `flutter_spinkit` | `ActivityIndicator` |
-| `pubspec.yaml` | `package.json` + file `.env` cho API key |
-
-## 👤 Tác giả
-
-- Họ tên: _Nguyễn Văn A_
-- MSSV: _12345678_
-- Lớp: _..._
-- Môn học: Lập trình đa nền tảng
